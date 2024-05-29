@@ -1,0 +1,40 @@
+.Home{
+    background-color: #191E25 ;
+    min-height: 90vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem ;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+span{
+    color: #275E8A
+}
+
+
+button{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    border-radius: 100%;
+    padding: 0.5rem;
+    border: solid 2px black;
+    background-color: #275E8A;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2) ;
+}
+.ImgButton{
+    width: 35px;
+    height: auto;
+    margin-top: 5px;
+}

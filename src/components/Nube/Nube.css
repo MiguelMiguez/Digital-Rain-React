@@ -1,0 +1,11 @@
+.Nube{
+    display: flex;
+    position: relative;
+}
+
+.ImgCloud{
+    width: 150px;
+    margin: 50px 80px;
+    position: relative;
+}
+
