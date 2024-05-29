@@ -23,8 +23,8 @@ const Nube = () => {
     
   return (
     <div className='Nube' ref={cloudRef}>
-        <img className='ImgCloud' src="../../../public/Img/Cloud/cloud.svg" alt="cloud" />
-        <img className='ImgCloud' src="../../../public/Img/Cloud/cloud.svg" alt="cloud" />
+        <img className='ImgCloud' src="/Cloud/cloud.svg" alt="cloud" />
+        <img className='ImgCloud' src="/Cloud/cloud.svg" alt="cloud" />
     </div>
     
   )

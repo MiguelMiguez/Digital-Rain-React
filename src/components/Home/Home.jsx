@@ -9,7 +9,7 @@ const Home = () => {
         <h1>Digital <span>Rain</span> </h1>
         <h2>Tu <span>solución</span> en <span>desarrollo</span> web</h2>
         <Nube/>
-        <button><img className='ImgButton' src="../../../public/img/Inicio/Polygon 1.svg" alt="" /></button>
+        <button><img className='ImgButton' src="/Inicio/Polygon.svg" alt="" /></button>
     </div>
   )
 }

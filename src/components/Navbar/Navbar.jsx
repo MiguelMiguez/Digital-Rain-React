@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './Navbar.css'
+import brandNavbar from '../../assets/Navbar/brandnavbar.svg'
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
   return (
     <div className='Navbar'>
         <div className='BrandNavbar'>
-            <img className='LogoNavbar' src="../../../public/Img/Navbar/brand navbar.svg" alt="LogoNavbar" /><h2>Digital <span>Rain</span></h2>
+            <img className='LogoNavbar' src="/Navbar/brandnavbar.svg" alt="LogoNavbar" /><h2>Digital <span>Rain</span></h2>
         </div>
         <div className={`Burger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <div className="Stick"></div>
