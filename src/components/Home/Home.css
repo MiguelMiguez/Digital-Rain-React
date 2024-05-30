@@ -33,8 +33,16 @@ button{
     background-color: #275E8A;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2) ;
 }
+
+.ButtonDown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .ImgButton{
     width: 35px;
     height: auto;
-    margin-top: 5px;
+    margin-top: 8px;
 }

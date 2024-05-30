@@ -6,6 +6,8 @@
     min-height: 11vh;
     background-color: #191E25;
     padding: 0 20px;
+    position: sticky;
+    z-index: 1;
   }
   
   .BrandNavbar {
@@ -34,6 +36,7 @@
     height: 3px;
     background-color: white;
     border-radius: 5px;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.616) ;
   }
   
   .Menu {
@@ -80,6 +83,7 @@
     font-size: 2rem;
     color: white;
     cursor: pointer;
+    
   }
 
   .MenuClose:hover{
