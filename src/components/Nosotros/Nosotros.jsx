@@ -3,7 +3,7 @@ import './Nosotros.css'
 
 const Nosotros = () => {
   return (
-    <div className='Nosotros'>
+    <div id='NosotrosSeccion' className='Nosotros'>
         <h2 className='TittleNosotros'>nosotros</h2>
         <p className='TextoNosotros'>En Digital Rain, creamos experiencias web impactantes. Ofrecemos desarrollo de landing pages atractivas, sitios empresariales profesionales y diseños personalizados. Nuestro enfoque en diseño responsive asegura que tu presencia online destaque en cualquier dispositivo.</p>
         <div className="InfoNosotros">
