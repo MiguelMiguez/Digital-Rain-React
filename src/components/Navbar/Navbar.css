@@ -6,8 +6,9 @@
     min-height: 11vh;
     background-color: #191E25;
     padding: 0 20px;
-    position: sticky;
+    position: fixed;
     z-index: 1;
+    width: 100%;
   }
   
   .BrandNavbar {
