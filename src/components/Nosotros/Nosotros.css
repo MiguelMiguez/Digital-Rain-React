@@ -10,11 +10,11 @@
     font-size: 2rem;
     font-weight: 700;
     color: #3A404F ;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .TextoNosotros{
-    margin: 1rem 2rem;
+    margin: 2rem 2rem;
     text-align: center;
     font-weight: 400;
     color: #3A404F
@@ -28,8 +28,7 @@
 }
 
 .NosotrosIlustracion{
-    margin: 2rem;
-    width: 300px;
+    margin: 3rem 2rem;
 }
 
 .ContainerDesarrollo{
@@ -42,16 +41,22 @@
     gap: 1rem;
     width: 350px;
     border-radius: 20px;
-    margin: 20px 0;
+    margin: 50px 0 100px;
     box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.384) ;
 }
 
-.Desarrollo{
+.Desarrollo {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     margin: 2rem;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+  
+.blur {
+    filter: blur(3px);
 }
 
 .IconDesarrollo{
