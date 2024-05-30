@@ -11,15 +11,15 @@ const Nosotros = () => {
             <div className="ContainerDesarrollo">
                 <div className='Desarrollo'>
                     <img className='IconDesarrollo' src="/Nosotros/iconoemprendedores.svg" alt="emprendedors" />
-                    <h3>Desarrollo web para emprendedores</h3>
+                    <h3 className='TittleDesarrollo'>Desarrollo web para emprendedores</h3>
                 </div>
                 <div className='Desarrollo'>
                     <img className='IconDesarrollo' src="/Nosotros/iconoempresas.svg" alt="empresas" />
-                    <h3>Desarrollo web para empresas</h3>
+                    <h3 className='TittleDesarrollo'>Desarrollo web para empresas</h3>
                 </div>
                 <div className='Desarrollo'>
                     <img className='IconDesarrollo' src="/Nosotros/inconopersonalizado.svg" alt="personalizado" />
-                    <h3>Desarrollo web personalizado</h3>
+                    <h3 className='TittleDesarrollo'>Desarrollo web personalizado</h3>
                 </div>
             </div>
         </div>
