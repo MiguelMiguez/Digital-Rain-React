@@ -4,6 +4,7 @@ import Home from '../Home/Home';
 import Navbar from '../Navbar/Navbar';
 import Nosotros from '../Nosotros/Nosotros';
 import Elegirnos from '../Elegrinos/Elegirnos';
+import Servicios from '../Servicios/Servicios';
 
 const ContainerAll = () => {
   return (
@@ -12,6 +13,7 @@ const ContainerAll = () => {
         <Home/>
         <Nosotros/>
         <Elegirnos/>
+        <Servicios/>
     </div>
   )
 }

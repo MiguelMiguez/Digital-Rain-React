@@ -1,0 +1,58 @@
+.Servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.TittleServicios{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3A404F;
+    margin-top: 70px;
+}
+
+.ContainerServicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 100px;
+   
+}
+
+.ServiciosInfo{
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.384) ;
+    width: 250px;
+    height: 250px;
+    background-color: #191E25;
+   
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TittleInfoServicios{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.CardTop{
+    width: 100%;
+    height: auto;
+}
+
+.CardBot{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+
+}
