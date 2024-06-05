@@ -5,6 +5,7 @@ import Navbar from '../Navbar/Navbar';
 import Nosotros from '../Nosotros/Nosotros';
 import Elegirnos from '../Elegrinos/Elegirnos';
 import Servicios from '../Servicios/Servicios';
+import Contacto from '../Contacto/Contacto';
 
 const ContainerAll = () => {
   return (
@@ -14,6 +15,7 @@ const ContainerAll = () => {
         <Nosotros/>
         <Elegirnos/>
         <Servicios/>
+        <Contacto/>
     </div>
   )
 }

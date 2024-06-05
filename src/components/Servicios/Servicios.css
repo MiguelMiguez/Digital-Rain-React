@@ -19,39 +19,106 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     margin-top: 100px;
    
 }
 
 .ServiciosInfo{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     background-color: #191E25;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.250) ;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.350) ;
+    border-radius: 10%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.ServiciosInfo:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 15px 25px #3f3d5698;
 }
 
 .TittleInfoServicios{
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.CardTop{
-    width: 100%;
-    height: auto;
-}
-
-.CardBot{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
     
+}
 
+.InfoOptimizacion, .InfoDisenoResponsive, .InfoMantenimiento247 {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 80%;
+    max-width: 800px;
+    background-color: #191E25;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    color: #fff;
+    border-radius: 20px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.InfoOptimizacion.active, .InfoDisenoResponsive.active, .InfoMantenimiento247.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 2rem;
+}
+
+.ModalBackground {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    transition: opacity 0.3s ease;
+}
+
+.ModalBackground.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.CloseWindow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #191E25;
+    padding: 6px 10px;
+    border-radius: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.CloseWindow:hover {
+    background-color: #be2626;
+    color: white;
+}
+
+.InfoOptimizacion ul, .InfoDisenoResponsive ul, .InfoMantenimiento247 ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.InfoOptimizacion ul li, .InfoDisenoResponsive ul li, .InfoMantenimiento247 ul li {
+    margin: 20px 0;
 }

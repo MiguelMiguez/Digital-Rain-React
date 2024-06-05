@@ -17,7 +17,7 @@ const Home = () => {
         <h1>Digital <span>Rain</span> </h1>
         <h2>Tu <span>solución</span> en <span>desarrollo</span> web</h2>
         <Nube/>
-        <button onClick={handleScrollToSection}>
+        <button className='ButtonHome' onClick={handleScrollToSection}>
           <div className='ButtonDown'>
             <img className='ImgButton' src="/Inicio/Polygon.svg" alt="button" />
           </div>
