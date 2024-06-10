@@ -29,11 +29,17 @@
     margin-top: 70px;
 }
 
-input{
+.ContactoForm{
     width: 300px;
     padding: 0.5rem;
     border-radius: 20px;
     border: 1px solid grey;
+    transition: 1s;
+}
+
+.ContactoForm:hover{
+  transform: scale(1.05);
+  border: 1px solid #275E8A ;
 }
 
 .ButtonForm{

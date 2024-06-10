@@ -96,6 +96,13 @@
     pointer-events: auto;
 }
 
+.ContainerElements{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .CloseWindow {
     position: absolute;
     top: 10px;
@@ -131,12 +138,7 @@
   }  
 
     
-  .ContainerElements{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
+  
   .ContainerServicios{
     width: 400px;
   }
@@ -159,9 +161,7 @@
   
       
     .ContainerElements{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: row;
   
     }
     .ContainerServicios{
@@ -186,10 +186,8 @@
   
       
     .ContainerElements{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 150px;   
+      flex-direction: row;
+      gap: 150px;
     }
     .ContainerServicios{
       width: 500px;
