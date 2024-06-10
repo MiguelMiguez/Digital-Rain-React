@@ -10,3 +10,30 @@
     
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    
+    .ImgCloud{
+        width: 250px;
+        margin: 70px 80px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    
+    .ImgCloud{
+        width: 250px;
+        margin: 50px 80px;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    
+    .ImgCloud{
+        width: 250px;
+        margin: 100px 150px;
+    }
+
+}

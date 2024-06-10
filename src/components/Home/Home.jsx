@@ -9,14 +9,20 @@ const Home = () => {
     if (section){
       section.scrollIntoView({ behavior: 'smooth'});
     }
-  };
-  
+  };  
   return (
     <div className='Home'>
-        <Nube/>
+        <div className='CloudContainer'>
+          <Nube/>
+          <Nube/>
+          <Nube/>
+        </div>
         <h1>Digital <span>Rain</span> </h1>
         <h2>Tu <span>solución</span> en <span>desarrollo</span> web</h2>
-        <Nube/>
+        <div className='CloudContainer'>
+          <Nube/>
+          <Nube/>
+        </div>
         <button className='ButtonHome' onClick={handleScrollToSection}>
           <div className='ButtonDown'>
             <img className='ImgButton' src="/Inicio/Polygon.svg" alt="button" />

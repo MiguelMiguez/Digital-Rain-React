@@ -122,3 +122,85 @@
 .InfoOptimizacion ul li, .InfoDisenoResponsive ul li, .InfoMantenimiento247 ul li {
     margin: 20px 0;
 }
+
+
+@media only screen and (min-width: 768px) {
+
+  .TittleServicios{
+    font-size: 2.5rem;
+  }  
+
+    
+  .ContainerElements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .ContainerServicios{
+    width: 400px;
+  }
+
+  .ServiciosInfo{
+    width: 150px;
+    height: 150px;
+  }
+
+  .TittleInfoServicios{
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+
+    .TittleServicios{
+      font-size: 2.5rem;
+    }  
+  
+      
+    .ContainerElements{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+    }
+    .ContainerServicios{
+      width: 400px;
+    }
+  
+    .ServiciosInfo{
+      width: 150px;
+      height: 150px;
+    }
+  
+    .TittleInfoServicios{
+      font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+
+    .TittleServicios{
+      font-size: 2.5rem;
+    }  
+  
+      
+    .ContainerElements{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 150px;   
+    }
+    .ContainerServicios{
+      width: 500px;
+    }
+  
+    .ServiciosInfo{
+      width: 200px;
+      height: 200px;
+    }
+  
+    .TittleInfoServicios{
+      font-size: 1.5rem;
+    }
+}

@@ -10,7 +10,8 @@ const Navbar = () => {
   return (
     <div className='Navbar'>
         <div className='BrandNavbar'>
-            <img className='LogoNavbar' src="/Navbar/brandnavbar.svg" alt="LogoNavbar" /><h2>Digital <span>Rain</span></h2>
+            <img className='LogoNavbar' src="/Navbar/brandnavbar.svg" alt="LogoNavbar" />
+            <h2 className='TittleNavbar'>Digital <span>Rain</span></h2>
         </div>
         <div className={`Burger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <div className="Stick"></div>
@@ -23,7 +24,7 @@ const Navbar = () => {
           <li><a href="#home">inicio</a></li>
           <li><a href="#services">nosotros</a></li>
           <li><a href="#about">servicios</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li><a href="#contact">contacto</a></li>
         </ul>
       </div>
     </div>

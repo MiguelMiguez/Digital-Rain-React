@@ -1,12 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Ilustracion = ({ src, width = 300, height = 300, speed = 1 }) => {
+const Ilustracion = ({ src, speed = 1 }) => {
+  const [dimensions, setDimensions] = useState({ width: 300, height: 300 });
+
+  const updateDimensions = () => {
+    const width = window.innerWidth;
+    if (width >= 1200) {
+      setDimensions({ width: 500, height: 500 });
+    } else if (width >= 992) {
+      setDimensions({ width: 400, height: 400 });
+    } else if (width >= 768) {
+      setDimensions({ width: 300, height: 300 });
+    } else if (width >= 576) {
+      setDimensions({ width: 300, height: 300 });
+    } else {
+      setDimensions({ width: 300, height: 300 });
+    }
+  };
+
+  useEffect(() => {
+    updateDimensions();
+    window.addEventListener('resize', updateDimensions);
+    return () => window.removeEventListener('resize', updateDimensions);
+  }, []);
+
   return (
     <dotlottie-player
       src={src}
       background="transparent"
       speed={speed}
-      style={{ width: `${width}px`, height: `${height}px` }}
+      style={{ width: `${dimensions.width}px`, height: `${dimensions.height}px` }}
       loop
       autoplay
     ></dotlottie-player>

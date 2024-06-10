@@ -38,3 +38,28 @@
     font-weight: 600;
     color: #3A404F;
 }
+
+@media only screen and (min-width: 758px) and (max-width: 1400px){
+  .Elegirnos{
+    flex-direction: row;
+  }
+
+  .ContainerElegrinos{
+    margin: 4rem 0;
+    border-radius: 20px;
+    width: 400px;
+}
+}
+
+@media only screen and (min-width: 1400px){
+    .Elegirnos{
+      flex-direction: row;
+      gap: 200px;
+    }
+
+    .ContainerElegrinos{
+        margin: 4rem 0;
+        border-radius: 20px;
+        width: 450px;
+    }
+  }

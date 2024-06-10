@@ -4,8 +4,9 @@ import './Contacto.css'
 const Contacto = () => {
   return (
     <div className='Contacto'>
-        <h2 className='TittleForm'>contacto</h2>
-        <form action="POST">
+        <h2 className='TittleForm'>contactanos</h2>
+        <form action="" method="POST">
+          <h3 className='SubTittleForm'>Nosotros nos <span>encargamos</span> de todo!</h3>
             <div className='FormGroup'>
                 <input type="text" id='name' placeholder='Nombre' />
                 <input type="text" id='surname' placeholder='Apellido' />

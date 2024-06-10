@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 70vh;
 
 }
 
@@ -11,6 +12,12 @@
     font-weight: 700;
     color: #3A404F;
     margin-top: 70px;
+}
+
+.SubTittleForm{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3A404F;
 }
 
 .FormGroup{
@@ -58,4 +65,22 @@ form{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .TittleForm{
+    font-size: 2.5rem;
+    margin: 50px 0px;
+  }
+
+  .FormGroup{
+    gap: 5rem;
+    margin: 2rem;
+    width: 900px;
+  }
+
+  input{
+    min-width: 400px;
+    min-height: 40px;
+  }
 }

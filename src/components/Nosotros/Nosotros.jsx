@@ -3,16 +3,9 @@ import './Nosotros.css';
 import Ilustracion from '../Ilustracion/Ilustracion';
 
 const Nosotros = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  
   const ilustracionSrc = '/Nosotros/ilustracion.lottie';
 
-  const handleMouseEnter = (index) => {
-    setHoveredIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredIndex(null);
-  };
 
   const desarrollos = [
     { src: '/Nosotros/iconoemprendedores.svg', alt: 'emprendedores', title: 'Desarrollo web para emprendedores' },
@@ -29,22 +22,18 @@ const Nosotros = () => {
       </p>
       <div className="InfoNosotros">
         <div className="NosotrosIlustracion">
-          <Ilustracion src={ilustracionSrc} width={300} height={300} speed={1} />
+          <Ilustracion src={ilustracionSrc}  className="Ilustracion" />
         </div>
         <div className="ContainerDesarrollo">
-          {desarrollos.map((desarrollo, index) => (
-            <div
-              key={index}
-              className={`Desarrollo ${hoveredIndex !== null && hoveredIndex !== index ? 'blur' : ''}`}
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
-            >
+          {desarrollos.map((desarrollo) => (
+            <div className='Desarrollo'>
               <img className="IconDesarrollo" src={desarrollo.src} alt={desarrollo.alt} />
               <h3 className="TittleDesarrollo">{desarrollo.title}</h3>
             </div>
           ))}
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#191E25" fill-opacity="1" d="M0,96L26.7,101.3C53.3,107,107,117,160,122.7C213.3,128,267,128,320,133.3C373.3,139,427,149,480,176C533.3,203,587,245,640,256C693.3,267,747,245,800,218.7C853.3,192,907,160,960,144C1013.3,128,1067,128,1120,149.3C1173.3,171,1227,213,1280,197.3C1333.3,181,1387,107,1413,69.3L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
     </div>
   );
 };
