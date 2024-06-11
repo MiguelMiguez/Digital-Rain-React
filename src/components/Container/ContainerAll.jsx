@@ -11,15 +11,15 @@ import Footer from '../Footer/Footer';
 const ContainerAll = () => {
   return (
     <div className='ContainerAll'>
-        <Navbar/>
-        <Home/>
-        <Nosotros/>
-        <Elegirnos/>
-        <Servicios/>
-        <Contacto/>
-        <Footer/>
+      <Navbar />
+      <div id='home'><Home /></div>
+      <div id='nosotros'><Nosotros /></div>
+      <div id='elegirnos'><Elegirnos /></div>
+      <div id='servicios'><Servicios /></div>
+      <div id='contacto'><Contacto /></div>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default ContainerAll
+export default ContainerAll;
