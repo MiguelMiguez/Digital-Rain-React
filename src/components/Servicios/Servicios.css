@@ -161,7 +161,7 @@
   
       
     .ContainerElements{
-      flex-direction: row;
+      flex-direction: row-reverse;
   
     }
     .ContainerServicios{
@@ -186,7 +186,7 @@
   
       
     .ContainerElements{
-      flex-direction: row;
+      flex-direction: row-reverse;
       gap: 150px;
     }
     .ContainerServicios{
