@@ -41,7 +41,7 @@ const Contacto = () => {
   };
 
   return (
-    <div className={`Contacto ${isModalVisible ? 'blur-background' : ''}`}>
+    <div className='Contacto'>
       <h2 className='TittleForm'>contactanos</h2>
       <form onSubmit={handleSubmit}>
         <h3 className='SubTittleForm'>Nosotros nos <span>encargamos</span> de todo!</h3>

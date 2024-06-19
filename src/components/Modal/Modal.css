@@ -16,26 +16,18 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
+    transform: translate(-50%, 50%); 
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease; 
   }
   
   .Modal.show {
     opacity: 1;
-  }
-  
-  .Modal.hide {
-    display: none;
+    transform: translate(-50%, -50%); 
   }
   
   .ModalTitle {
     margin: 1rem;
     min-width: 250px;
-  }
-  
-  .blur-background {
-    filter: blur(5px);
   }
   
