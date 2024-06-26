@@ -13,12 +13,12 @@
     border-radius: 10px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.438);
     position: fixed;
-    top: 60%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, 50%); 
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease; 
-    display: none;
+   
 }
   
   .Modal.show {
