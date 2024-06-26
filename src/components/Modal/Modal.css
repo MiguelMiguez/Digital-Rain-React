@@ -18,7 +18,8 @@
     transform: translate(-50%, 50%); 
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease; 
-  }
+    display: none;
+}
   
   .Modal.show {
     opacity: 1;
